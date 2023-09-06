@@ -18,16 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="soy-Ln-0Nu">
-                                <rect key="frame" x="0.0" y="59" width="393" height="884.33333333333337"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your emploee name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTN-is-j26">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSz-bA-hXz">
+                                        <rect key="frame" x="0.0" y="38" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What date would you like to put on the paycheck?" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-E4-sK2">
+                                        <rect key="frame" x="0.0" y="76" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="tms-FR-Hto">
+                                        <rect key="frame" x="0.0" y="114.00000000000001" width="393" height="37.666666666666671"/>
+                                    </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often is your employee paid?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-2C-dHG">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="88.333333333333329"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <rect key="frame" x="0.0" y="151.66666666666666" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RpZ-F6-VYh">
-                                        <rect key="frame" x="0.0" y="88.333333333333343" width="393" height="44.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="189.66666666666666" width="393" height="38"/>
                                         <menu key="menu" id="pxa-OV-WaI">
                                             <children>
                                                 <command title="Weekly" id="8n3-w4-Te4"/>
@@ -51,30 +70,24 @@
                                             <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRt-F8-eqO">
-                                        <rect key="frame" x="0.0" y="132.66666666666666" width="393" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How he/she paid?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-KX-cTx">
-                                        <rect key="frame" x="0.0" y="153" width="393" height="44.333333333333343"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <rect key="frame" x="0.0" y="227.66666666666669" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQs-xp-ALQ">
-                                        <rect key="frame" x="0.0" y="197.33333333333331" width="393" height="44"/>
+                                        <rect key="frame" x="0.0" y="265.66666666666669" width="393" height="38"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly Wage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzk-8E-9uf">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="44"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="38"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Hours Wage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEm-g3-v3e">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="44"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="38"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -85,15 +98,15 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFt-hK-Zcw">
-                                        <rect key="frame" x="0.0" y="241.33333333333334" width="393" height="44.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="303.66666666666669" width="393" height="38"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-nw-5YN">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="44.333333333333336"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-nw-5YN">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOn-0f-xeh">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="44.333333333333336"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOn-0f-xeh">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -104,17 +117,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-LU-08m">
-                                        <rect key="frame" x="0.0" y="285.66666666666669" width="393" height="44.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="341.66666666666669" width="393" height="38"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Day Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMk-jY-csm">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="44.333333333333336"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="38"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours You Have Worked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sd-We-JoV">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="44.333333333333336"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="38"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -125,15 +138,15 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQC-oM-prk">
-                                        <rect key="frame" x="0.0" y="330" width="393" height="44"/>
+                                        <rect key="frame" x="0.0" y="379.66666666666669" width="393" height="37.666666666666686"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-rh-van">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="37.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qYA-IY-ouR">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="44"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="37.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -144,33 +157,90 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-uc-RUq">
-                                        <rect key="frame" x="0.0" y="374" width="393" height="62"/>
+                                        <rect key="frame" x="0.0" y="417.33333333333331" width="393" height="38"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Paycheck Should Be: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-z3-OPL">
-                                        <rect key="frame" x="0.0" y="436" width="393" height="88.333333333333371"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <rect key="frame" x="0.0" y="455.33333333333337" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paycheck" translatesAutoresizingMaskIntoConstraints="NO" id="7bh-36-h5Q">
-                                        <rect key="frame" x="0.0" y="524.33333333333337" width="393" height="360"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spell the Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsS-SX-jSJ">
+                                        <rect key="frame" x="0.0" y="493.33333333333337" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Use only letters" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-xN-nNb">
+                                        <rect key="frame" x="0.0" y="531.33333333333337" width="393" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-uh-9Iz">
+                                        <rect key="frame" x="0.0" y="569.33333333333337" width="393" height="189.66666666666663"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="AsS-SX-jSJ" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="0sc-Bx-wWM"/>
                                     <constraint firstItem="RpZ-F6-VYh" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="7sa-uD-IFo"/>
+                                    <constraint firstItem="H4I-uh-9Iz" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="AKe-Yr-Rb6"/>
+                                    <constraint firstItem="qTN-is-j26" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Ao5-1c-Jdv"/>
                                     <constraint firstItem="SQs-xp-ALQ" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Ep2-0L-cPc"/>
                                     <constraint firstItem="LFt-hK-Zcw" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FCw-Vu-thE"/>
+                                    <constraint firstItem="BNj-xN-nNb" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FM7-ig-SXl"/>
+                                    <constraint firstItem="tms-FR-Hto" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="H9D-qG-6H5"/>
+                                    <constraint firstItem="JSz-bA-hXz" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="LmD-Rf-H5k"/>
                                     <constraint firstItem="IQC-oM-prk" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="LzL-lP-2Y9"/>
-                                    <constraint firstItem="t8v-z3-OPL" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.1" id="MAy-OF-Rn9"/>
+                                    <constraint firstItem="t8v-z3-OPL" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="MAy-OF-Rn9"/>
                                     <constraint firstItem="yKt-LU-08m" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Nz2-6m-bRU"/>
-                                    <constraint firstItem="7bh-36-h5Q" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.480018" id="OLK-hE-UTe"/>
-                                    <constraint firstItem="cNU-uc-RUq" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.07" id="Rib-Su-fam"/>
-                                    <constraint firstItem="Gkg-2C-dHG" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.1" id="boA-F6-WNK"/>
+                                    <constraint firstItem="cNU-uc-RUq" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Rib-Su-fam"/>
+                                    <constraint firstItem="7bm-E4-sK2" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="YZ5-YH-GXe"/>
+                                    <constraint firstItem="Gkg-2C-dHG" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="boA-F6-WNK"/>
                                     <constraint firstItem="Ued-KX-cTx" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="e9x-6B-7GS"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paycheck" id="7bh-36-h5Q">
+                                <rect key="frame" x="0.0" y="634" width="393" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" One Thousand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fh-pW-FXw">
+                                <rect key="frame" x="13" y="716" width="312" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="09/08/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5q-FW-NtV">
+                                <rect key="frame" x="256" y="663" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Stanislav Stajila" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obw-b8-Dne">
+                                <rect key="frame" x="61" y="692" width="217" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Payment " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-xa-77l">
+                                <rect key="frame" x="42" y="762" width="184" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1,0000 1/100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUY-I2-Tad">
+                                <rect key="frame" x="298" y="687" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
