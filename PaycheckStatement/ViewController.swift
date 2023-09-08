@@ -7,15 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameInputOutlet: UITextField!
-    @IBOutlet weak var oftenOutlet: UIButton!
     @IBOutlet weak var extraHoursWageOutlet: UITextField!
     @IBOutlet weak var dateInputOutlet: UIDatePicker!
     @IBOutlet weak var workDayHoursOutlet: UITextField!
     @IBOutlet weak var hourlyWageOutlet: UITextField!
-//    var name : String?
+    @IBOutlet weak var picOutlet: UISegmentedControl!
+    var name : String?
+    var timePayment: Int?
     let dateFormatter = DateFormatter()
 //    var date : String?
     
@@ -23,16 +24,34 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        nameInputOutlet.delegate = self
+        
     }
     
     
     @IBAction func calculateAction(_ sender: Any) {
-//        name = nameInputOutlet.text
+        nameInputOutlet.resignFirstResponder()
+        name = nameInputOutlet.text
+        print(name)
+        
         dateFormatter.dateStyle = DateFormatter.Style.short
         var date = dateFormatter.string(from: dateInputOutlet.date)
         print(date)
+                
+        if (picOutlet.selectedSegmentIndex == 0){
+            timePayment = 5
+        } else {
+            timePayment = 20
+        }
+        
+        print(timePayment)
+        
+        
+        
+        
+        
     }
-    
 
+    
 }
 

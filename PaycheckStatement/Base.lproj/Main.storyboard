@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,31 +45,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RpZ-F6-VYh">
-                                        <rect key="frame" x="0.0" y="189.66666666666666" width="393" height="38"/>
-                                        <menu key="menu" id="pxa-OV-WaI">
-                                            <children>
-                                                <command title="Weekly" id="8n3-w4-Te4"/>
-                                                <command title="Bi-weekly" id="Ebr-kG-tU1"/>
-                                                <command title="Monthly" id="WoQ-h9-nIL"/>
-                                                <command title="Semi-monthly" id="cOI-Hr-8Lg"/>
-                                            </children>
-                                        </menu>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Button">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="15" name="TimesNewRomanPSMT"/>
-                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
-                                        </buttonConfiguration>
-                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-Cq-Q77">
+                                        <rect key="frame" x="0.0" y="189.66666666666666" width="393" height="39"/>
+                                        <segments>
+                                            <segment title="Weekly"/>
+                                            <segment title="Monthly"/>
+                                        </segments>
+                                    </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How he/she paid?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-KX-cTx">
                                         <rect key="frame" x="0.0" y="227.66666666666669" width="393" height="38"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
@@ -182,17 +163,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-uh-9Iz">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paycheck" translatesAutoresizingMaskIntoConstraints="NO" id="2vP-6O-4AM">
                                         <rect key="frame" x="0.0" y="569.33333333333337" width="393" height="189.66666666666663"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AsS-SX-jSJ" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="0sc-Bx-wWM"/>
-                                    <constraint firstItem="RpZ-F6-VYh" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="7sa-uD-IFo"/>
-                                    <constraint firstItem="H4I-uh-9Iz" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="AKe-Yr-Rb6"/>
                                     <constraint firstItem="qTN-is-j26" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Ao5-1c-Jdv"/>
+                                    <constraint firstAttribute="trailing" secondItem="tms-FR-Hto" secondAttribute="trailing" id="Edd-sS-frD"/>
                                     <constraint firstItem="SQs-xp-ALQ" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Ep2-0L-cPc"/>
                                     <constraint firstItem="LFt-hK-Zcw" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FCw-Vu-thE"/>
                                     <constraint firstItem="BNj-xN-nNb" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FM7-ig-SXl"/>
@@ -204,6 +182,8 @@
                                     <constraint firstItem="cNU-uc-RUq" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Rib-Su-fam"/>
                                     <constraint firstItem="Gkg-2C-dHG" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="boA-F6-WNK"/>
                                     <constraint firstItem="Ued-KX-cTx" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="e9x-6B-7GS"/>
+                                    <constraint firstItem="tms-FR-Hto" firstAttribute="leading" secondItem="soy-Ln-0Nu" secondAttribute="leading" id="i3D-Po-1kF"/>
+                                    <constraint firstItem="nwd-Cq-Q77" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="q3R-4G-Ay4"/>
                                     <constraint firstItem="eI9-Vz-jqh" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="x7a-5N-opE"/>
                                 </constraints>
                             </stackView>
@@ -213,6 +193,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="soy-Ln-0Nu" secondAttribute="trailing" id="Kf7-VS-wFt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="soy-Ln-0Nu" secondAttribute="bottom" id="P9n-r2-Ycm"/>
+                            <constraint firstItem="soy-Ln-0Nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="PE0-Gf-gRV"/>
                             <constraint firstItem="soy-Ln-0Nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h75-Hg-HA8"/>
                             <constraint firstItem="soy-Ln-0Nu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jOc-nt-HYF"/>
                         </constraints>
@@ -222,7 +203,7 @@
                         <outlet property="extraHoursWageOutlet" destination="MOn-0f-xeh" id="xhM-bs-Jsl"/>
                         <outlet property="hourlyWageOutlet" destination="aKp-nw-5YN" id="ELI-QR-ehJ"/>
                         <outlet property="nameInputOutlet" destination="JSz-bA-hXz" id="pvQ-TP-Ttb"/>
-                        <outlet property="oftenOutlet" destination="RpZ-F6-VYh" id="1Pw-EE-g9d"/>
+                        <outlet property="picOutlet" destination="nwd-Cq-Q77" id="fcM-io-c7a"/>
                         <outlet property="workDayHoursOutlet" destination="qYA-IY-ouR" id="lbe-cT-1r5"/>
                     </connections>
                 </viewController>
@@ -232,11 +213,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Paycheck" width="818" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
