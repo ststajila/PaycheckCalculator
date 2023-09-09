@@ -16,190 +16,234 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="soy-Ln-0Nu">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="soy-Ln-0Nu">
+                                <rect key="frame" x="0.0" y="59" width="393" height="568"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everything looks good!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeZ-Gu-Xk2">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="19"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your emploee name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTN-is-j26">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="27" width="393" height="22.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSz-bA-hXz">
-                                        <rect key="frame" x="0.0" y="38" width="393" height="38"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Name (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSz-bA-hXz">
+                                        <rect key="frame" x="0.0" y="57.333333333333329" width="393" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What date would you like to put on the paycheck?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI9-Vz-jqh">
-                                        <rect key="frame" x="0.0" y="76" width="393" height="38"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="99.333333333333343" width="393" height="21.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="tms-FR-Hto">
-                                        <rect key="frame" x="0.0" y="114.00000000000001" width="393" height="37.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="128.66666666666666" width="393" height="50"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often is your employee paid?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-2C-dHG">
-                                        <rect key="frame" x="0.0" y="151.66666666666666" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="186.66666666666666" width="393" height="22.333333333333343"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-Cq-Q77">
-                                        <rect key="frame" x="0.0" y="189.66666666666666" width="393" height="39"/>
+                                        <rect key="frame" x="0.0" y="217" width="393" height="32"/>
                                         <segments>
                                             <segment title="Weekly"/>
                                             <segment title="Monthly"/>
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How he/she paid?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-KX-cTx">
-                                        <rect key="frame" x="0.0" y="227.66666666666669" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="256" width="393" height="22.333333333333314"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQs-xp-ALQ">
-                                        <rect key="frame" x="0.0" y="265.66666666666669" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="286.33333333333331" width="393" height="22.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly wage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzk-8E-9uf">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="38"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="22.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra hours wage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEm-g3-v3e">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="38"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="22.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="VEm-g3-v3e" firstAttribute="width" secondItem="SQs-xp-ALQ" secondAttribute="width" multiplier="0.5" id="Iau-Nt-kj9"/>
-                                            <constraint firstItem="qzk-8E-9uf" firstAttribute="width" secondItem="SQs-xp-ALQ" secondAttribute="width" multiplier="0.5" id="Kor-gd-ro3"/>
+                                            <constraint firstItem="VEm-g3-v3e" firstAttribute="width" secondItem="SQs-xp-ALQ" secondAttribute="width" multiplier="0.5" id="U0a-iy-z5N"/>
+                                            <constraint firstItem="qzk-8E-9uf" firstAttribute="width" secondItem="SQs-xp-ALQ" secondAttribute="width" multiplier="0.5" id="wOt-hO-C34"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFt-hK-Zcw">
-                                        <rect key="frame" x="0.0" y="303.66666666666669" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="316.66666666666669" width="393" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-nw-5YN">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="38"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOn-0f-xeh">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="38"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="MOn-0f-xeh" firstAttribute="width" secondItem="LFt-hK-Zcw" secondAttribute="width" multiplier="0.5" id="37K-jv-bUC"/>
-                                            <constraint firstItem="aKp-nw-5YN" firstAttribute="width" secondItem="LFt-hK-Zcw" secondAttribute="width" multiplier="0.5" id="hX3-vh-MZa"/>
+                                            <constraint firstItem="aKp-nw-5YN" firstAttribute="width" secondItem="LFt-hK-Zcw" secondAttribute="width" multiplier="0.5" id="1MY-G7-Dvf"/>
+                                            <constraint firstItem="MOn-0f-xeh" firstAttribute="width" secondItem="LFt-hK-Zcw" secondAttribute="width" multiplier="0.5" id="fYa-Px-lyl"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-LU-08m">
-                                        <rect key="frame" x="0.0" y="341.66666666666669" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="358.66666666666669" width="393" height="22.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work day hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMk-jY-csm">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="38"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="22.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours worked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sd-We-JoV">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="38"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="22.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="JMk-jY-csm" firstAttribute="width" secondItem="yKt-LU-08m" secondAttribute="width" multiplier="0.5" id="MBD-oj-eU0"/>
-                                            <constraint firstItem="5sd-We-JoV" firstAttribute="width" secondItem="yKt-LU-08m" secondAttribute="width" multiplier="0.5" id="hhj-ea-gOc"/>
+                                            <constraint firstItem="5sd-We-JoV" firstAttribute="width" secondItem="yKt-LU-08m" secondAttribute="width" multiplier="0.5" id="OPS-8F-KyX"/>
+                                            <constraint firstItem="JMk-jY-csm" firstAttribute="width" secondItem="yKt-LU-08m" secondAttribute="width" multiplier="0.5" id="o2I-XY-xf3"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQC-oM-prk">
-                                        <rect key="frame" x="0.0" y="379.66666666666669" width="393" height="37.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="389" width="393" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-rh-van">
-                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="37.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qYA-IY-ouR">
-                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="37.666666666666664"/>
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="qYA-IY-ouR" firstAttribute="width" secondItem="IQC-oM-prk" secondAttribute="width" multiplier="0.5" id="PRb-k2-mJN"/>
-                                            <constraint firstItem="ncg-rh-van" firstAttribute="width" secondItem="IQC-oM-prk" secondAttribute="width" multiplier="0.5" id="ZcF-ep-k4q"/>
+                                            <constraint firstItem="ncg-rh-van" firstAttribute="width" secondItem="IQC-oM-prk" secondAttribute="width" multiplier="0.5" id="8iC-Kn-XHQ"/>
+                                            <constraint firstItem="qYA-IY-ouR" firstAttribute="width" secondItem="IQC-oM-prk" secondAttribute="width" multiplier="0.5" id="zWY-H1-qsC"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-uc-RUq">
-                                        <rect key="frame" x="0.0" y="417.33333333333331" width="393" height="38"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
-                                        <connections>
-                                            <action selector="calculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-Zw-KSl"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your paycheck should be: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-z3-OPL">
-                                        <rect key="frame" x="0.0" y="455.33333333333337" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="431" width="393" height="22.333333333333314"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spell the amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsS-SX-jSJ">
-                                        <rect key="frame" x="0.0" y="493.33333333333337" width="393" height="38"/>
+                                        <rect key="frame" x="0.0" y="461.33333333333337" width="393" height="22.333333333333314"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Use only letters" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-xN-nNb">
-                                        <rect key="frame" x="0.0" y="531.33333333333337" width="393" height="38"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Spell the amount (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-xN-nNb">
+                                        <rect key="frame" x="0.0" y="491.66666666666663" width="393" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paycheck" translatesAutoresizingMaskIntoConstraints="NO" id="2vP-6O-4AM">
-                                        <rect key="frame" x="0.0" y="569.33333333333337" width="393" height="189.66666666666663"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-uc-RUq">
+                                        <rect key="frame" x="0.0" y="533.66666666666663" width="393" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Create a check"/>
+                                        <connections>
+                                            <action selector="calculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-Zw-KSl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="AsS-SX-jSJ" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="0sc-Bx-wWM"/>
-                                    <constraint firstItem="qTN-is-j26" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Ao5-1c-Jdv"/>
-                                    <constraint firstAttribute="trailing" secondItem="tms-FR-Hto" secondAttribute="trailing" id="Edd-sS-frD"/>
-                                    <constraint firstItem="SQs-xp-ALQ" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Ep2-0L-cPc"/>
-                                    <constraint firstItem="LFt-hK-Zcw" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FCw-Vu-thE"/>
-                                    <constraint firstItem="BNj-xN-nNb" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FM7-ig-SXl"/>
-                                    <constraint firstItem="tms-FR-Hto" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="H9D-qG-6H5"/>
-                                    <constraint firstItem="2vP-6O-4AM" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.24989" id="LJe-Fm-II3"/>
-                                    <constraint firstItem="JSz-bA-hXz" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="LmD-Rf-H5k"/>
-                                    <constraint firstItem="IQC-oM-prk" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="LzL-lP-2Y9"/>
-                                    <constraint firstItem="t8v-z3-OPL" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="MAy-OF-Rn9"/>
-                                    <constraint firstItem="yKt-LU-08m" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Nz2-6m-bRU"/>
-                                    <constraint firstItem="cNU-uc-RUq" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="Rib-Su-fam"/>
-                                    <constraint firstItem="Gkg-2C-dHG" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="boA-F6-WNK"/>
-                                    <constraint firstItem="Ued-KX-cTx" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="e9x-6B-7GS"/>
-                                    <constraint firstItem="tms-FR-Hto" firstAttribute="leading" secondItem="soy-Ln-0Nu" secondAttribute="leading" id="i3D-Po-1kF"/>
-                                    <constraint firstItem="nwd-Cq-Q77" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="q3R-4G-Ay4"/>
-                                    <constraint firstItem="eI9-Vz-jqh" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="x7a-5N-opE"/>
-                                </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Paycheck" translatesAutoresizingMaskIntoConstraints="NO" id="2vP-6O-4AM">
+                                <rect key="frame" x="0.0" y="644" width="393" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="GE6-u5-q1O"/>
+                                    <constraint firstAttribute="height" constant="191" id="ZKS-m9-XBL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWy-CE-lcL">
+                                <rect key="frame" x="258" y="680" width="80" height="16.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ep4-kL-jPy"/>
+                                    <constraint firstAttribute="height" constant="16.670000000000002" id="hmd-h2-2Xh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evR-ck-wPQ">
+                                <rect key="frame" x="298" y="701" width="76" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="RqP-s9-cMo"/>
+                                    <constraint firstAttribute="height" constant="21" id="nu5-gu-ufd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoS-w5-xuF">
+                                <rect key="frame" x="62" y="702" width="219" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="7ys-D9-TTR"/>
+                                    <constraint firstAttribute="width" constant="219" id="ghn-Gx-4hO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkP-Ak-h76">
+                                <rect key="frame" x="19" y="730" width="311" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="Oe4-2n-HQV"/>
+                                    <constraint firstAttribute="height" constant="22" id="ofG-LI-t4w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="soy-Ln-0Nu" secondAttribute="trailing" id="Kf7-VS-wFt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="soy-Ln-0Nu" secondAttribute="bottom" id="P9n-r2-Ycm"/>
-                            <constraint firstItem="soy-Ln-0Nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="PE0-Gf-gRV"/>
-                            <constraint firstItem="soy-Ln-0Nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h75-Hg-HA8"/>
-                            <constraint firstItem="soy-Ln-0Nu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jOc-nt-HYF"/>
+                            <constraint firstItem="soy-Ln-0Nu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="203-Wm-Bcj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UkP-Ak-h76" secondAttribute="bottom" constant="101" id="KYR-zu-YhV"/>
+                            <constraint firstItem="UkP-Ak-h76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="Lup-Mr-RVZ"/>
+                            <constraint firstItem="UkP-Ak-h76" firstAttribute="top" secondItem="QoS-w5-xuF" secondAttribute="bottom" constant="2" id="O1M-fl-p2r"/>
+                            <constraint firstItem="evR-ck-wPQ" firstAttribute="top" secondItem="pWy-CE-lcL" secondAttribute="bottom" constant="4.3300000000000001" id="TL7-dt-WWk"/>
+                            <constraint firstItem="evR-ck-wPQ" firstAttribute="leading" secondItem="QoS-w5-xuF" secondAttribute="trailing" constant="17" id="cEf-8N-Zh0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2vP-6O-4AM" secondAttribute="bottom" constant="18" id="dLT-sz-06N"/>
+                            <constraint firstItem="2vP-6O-4AM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iff-Re-c0Y"/>
+                            <constraint firstItem="UkP-Ak-h76" firstAttribute="top" secondItem="evR-ck-wPQ" secondAttribute="bottom" constant="8" symbolic="YES" id="lY4-Qg-skM"/>
+                            <constraint firstItem="pWy-CE-lcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="258" id="pEB-FW-52C"/>
+                            <constraint firstItem="soy-Ln-0Nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sG5-aW-pm2"/>
+                            <constraint firstAttribute="trailing" secondItem="soy-Ln-0Nu" secondAttribute="trailing" id="v7q-qc-5QR"/>
+                            <constraint firstItem="QoS-w5-xuF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="xDq-zM-fRD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonOutlet" destination="cNU-uc-RUq" id="pGd-QY-Mqh"/>
+                        <outlet property="checkAmountOutlet" destination="evR-ck-wPQ" id="urk-Rm-cgr"/>
+                        <outlet property="checkDateOutlet" destination="pWy-CE-lcL" id="Tce-eG-pqX"/>
+                        <outlet property="checkNameOutlet" destination="QoS-w5-xuF" id="4Nv-dG-jBZ"/>
+                        <outlet property="checkSpellAmountOutlet" destination="UkP-Ak-h76" id="gdd-eN-oAM"/>
                         <outlet property="dateInputOutlet" destination="tms-FR-Hto" id="XHy-MT-DYk"/>
                         <outlet property="extraHoursWageOutlet" destination="MOn-0f-xeh" id="xhM-bs-Jsl"/>
                         <outlet property="hourlyWageOutlet" destination="aKp-nw-5YN" id="ELI-QR-ehJ"/>
@@ -207,6 +251,7 @@
                         <outlet property="nameInputOutlet" destination="JSz-bA-hXz" id="pvQ-TP-Ttb"/>
                         <outlet property="picOutlet" destination="nwd-Cq-Q77" id="fcM-io-c7a"/>
                         <outlet property="spellAmountOutlet" destination="BNj-xN-nNb" id="nt0-LW-zwp"/>
+                        <outlet property="statusCheckOutlet" destination="zeZ-Gu-Xk2" id="WSu-fo-B62"/>
                         <outlet property="totalOutlet" destination="t8v-z3-OPL" id="97A-sb-rQX"/>
                         <outlet property="workDayHoursOutlet" destination="ncg-rh-van" id="mpy-Nn-kHK"/>
                     </connections>
@@ -220,6 +265,9 @@
         <image name="Paycheck" width="818" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
