@@ -146,13 +146,13 @@
                                             <action selector="calculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4c-Zw-KSl"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Paycheck Should Be: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-z3-OPL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your paycheck should be: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-z3-OPL">
                                         <rect key="frame" x="0.0" y="455.33333333333337" width="393" height="38"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spell the Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsS-SX-jSJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spell the amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsS-SX-jSJ">
                                         <rect key="frame" x="0.0" y="493.33333333333337" width="393" height="38"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -175,6 +175,7 @@
                                     <constraint firstItem="LFt-hK-Zcw" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FCw-Vu-thE"/>
                                     <constraint firstItem="BNj-xN-nNb" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="FM7-ig-SXl"/>
                                     <constraint firstItem="tms-FR-Hto" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="H9D-qG-6H5"/>
+                                    <constraint firstItem="2vP-6O-4AM" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.24989" id="LJe-Fm-II3"/>
                                     <constraint firstItem="JSz-bA-hXz" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="LmD-Rf-H5k"/>
                                     <constraint firstItem="IQC-oM-prk" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="LzL-lP-2Y9"/>
                                     <constraint firstItem="t8v-z3-OPL" firstAttribute="height" secondItem="soy-Ln-0Nu" secondAttribute="height" multiplier="0.05" id="MAy-OF-Rn9"/>
@@ -202,9 +203,12 @@
                         <outlet property="dateInputOutlet" destination="tms-FR-Hto" id="XHy-MT-DYk"/>
                         <outlet property="extraHoursWageOutlet" destination="MOn-0f-xeh" id="xhM-bs-Jsl"/>
                         <outlet property="hourlyWageOutlet" destination="aKp-nw-5YN" id="ELI-QR-ehJ"/>
+                        <outlet property="hoursWorkedOutlet" destination="qYA-IY-ouR" id="ebY-GV-xff"/>
                         <outlet property="nameInputOutlet" destination="JSz-bA-hXz" id="pvQ-TP-Ttb"/>
                         <outlet property="picOutlet" destination="nwd-Cq-Q77" id="fcM-io-c7a"/>
-                        <outlet property="workDayHoursOutlet" destination="qYA-IY-ouR" id="lbe-cT-1r5"/>
+                        <outlet property="spellAmountOutlet" destination="BNj-xN-nNb" id="nt0-LW-zwp"/>
+                        <outlet property="totalOutlet" destination="t8v-z3-OPL" id="97A-sb-rQX"/>
+                        <outlet property="workDayHoursOutlet" destination="ncg-rh-van" id="mpy-Nn-kHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
