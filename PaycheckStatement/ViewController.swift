@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var name : String?
     var timePayment: Int?
     let dateFormatter = DateFormatter()
+    var total: Double?
     @IBOutlet weak var totalOutlet: UILabel!
     @IBOutlet weak var spellAmountOutlet: UITextField!
     @IBOutlet weak var statusCheckOutlet: UILabel!
@@ -57,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         }
         if nameCheck {
         
-            UIColor.green
+            statusCheckOutlet.backgroundColor = UIColor.green
             statusCheckOutlet.text = "Everything looks good!"
             
             checkNameOutlet.textColor = UIColor.black
@@ -108,28 +109,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                             
                                             
                                             if hw <= wd {
-                                                var total = Double(timePayment!) * hw * w
-                                                totalOutlet.text = "Your paycheck should be: \(total)"
+                                            total = Double(timePayment!) * hw * w
+                                    totalOutlet.text = "Your paycheck should be: \(total!)"
                                                 
                                                 statusCheckOutlet.backgroundColor = UIColor.green
                                                 statusCheckOutlet.text = "Everything looks good!"
                                                 
                                                 checkAmountOutlet.textColor = UIColor.black
-                                                checkAmountOutlet.text = "\(total)"
+                                                checkAmountOutlet.text = "\(total!)"
                                                 
                                                 checkSpellAmountOutlet.textColor = UIColor.black
                                                 checkSpellAmountOutlet.text = spellAmountOutlet.text!
                                                 buttonOutlet.setTitle("Update Check", for: .normal)
                                                 
                                             } else{
-                                                var total = Double(timePayment!) * ((wd * w) + ((hw - wd) * ew))
-                                                totalOutlet.text = "Your paycheck should be: \(total)"
+                                    total = Double(timePayment!) * ((wd * w) + ((hw - wd) * ew))
+                                                totalOutlet.text = "Your paycheck should be: \(total!)"
                                                 
                                                 statusCheckOutlet.backgroundColor = UIColor.green
                                                 statusCheckOutlet.text = "Everything looks good!"
                                                 
                                                 checkAmountOutlet.textColor = UIColor.black
-                                                checkAmountOutlet.text = "\(total)"
+                                    checkAmountOutlet.text = "\(total!)"
                                                 
                                                 checkSpellAmountOutlet.textColor = UIColor.black
                                                 checkSpellAmountOutlet.text = spellAmountOutlet.text!
